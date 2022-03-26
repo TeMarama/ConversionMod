@@ -2,4 +2,4 @@
 
 ## Download
 
-[CorseForge]()
+[CurseForge]()
