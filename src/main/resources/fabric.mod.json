@@ -4,16 +4,16 @@
   "version": "${version}",
 
   "name": "Conversion",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "description": "Later",
   "authors": [
-    "Me!"
+    "Conversion Team"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
+    "homepage": "https://curseforge.com/mc-mods/conversion",
     "sources": "https://github.com/NiTiS-Dev/Conversion"
   },
 
-  "license": "CC0-1.0",
+  "license": "MIT",
   "icon": "assets/conversion/icon.png",
 
   "environment": "*",
