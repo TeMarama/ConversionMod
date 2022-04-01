@@ -6,11 +6,15 @@
   "name": "Conversion",
   "description": "Later",
   "authors": [
-    "Conversion Team"
+    "NickName73 (Conversion Team)",
+    "iTeMaramaNui (Conversion Team)"
+  ],
+  "contributors": [
   ],
   "contact": {
     "homepage": "https://curseforge.com/mc-mods/conversion",
-    "sources": "https://github.com/NiTiS-Dev/Conversion"
+    "sources": "https://github.com/NiTiS-Dev/Conversion",
+    "repo": "https://github.com/NiTiS-Dev/Conversion"
   },
 
   "license": "MIT",
@@ -34,5 +38,17 @@
     "fabric": "*",
     "minecraft": "1.18.x",
     "java": ">=17"
+  },
+  "custom": {
+    "modupdater": {
+      "strategy": "curseforge",
+      "projectID": 599230,
+      "strict": false
+    },
+    "modmenu": {
+      "links": {
+      },
+      "badges": [ ]
+    }
   }
 }
