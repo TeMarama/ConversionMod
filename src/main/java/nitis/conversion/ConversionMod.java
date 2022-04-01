@@ -1,6 +1,7 @@
 package nitis.conversion;
 
 import net.fabricmc.api.ModInitializer;
+import nitis.conversion.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -10,6 +11,8 @@ public class ConversionMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Initialization");
+
+		ModItems.registerModItems();
+
 	}
 }
