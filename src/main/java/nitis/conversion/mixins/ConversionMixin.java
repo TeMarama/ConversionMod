@@ -1,4 +1,4 @@
-package nitis.conversion.mixin;
+package nitis.conversion.mixins;
 
 import nitis.conversion.ConversionMod;
 import net.minecraft.client.gui.screen.TitleScreen;
