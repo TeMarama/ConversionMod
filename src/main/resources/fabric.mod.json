@@ -22,11 +22,11 @@
       "nitis.conversion.ConversionMod"
     ],
     "client": [
-      "nitis.conversion.ConversionClient"
+      "nitis.conversion.client.ConversionClient"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "conversion.mixins.json"
   ],
 
   "depends": {
