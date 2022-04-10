@@ -1,5 +1,6 @@
 {
-  "item.conversion.test_item": "Test Item",
+  "item.conversion.test_item": "Test item",
   "item.conversion.thing": "Thing",
-  "block.conversion.checkmate": "Checkmate"
+  "block.conversion.checkmate": "Checkmate",
+  "block.conversion.tin_block": "Tin block"
 }

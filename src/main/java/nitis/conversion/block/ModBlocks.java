@@ -16,6 +16,9 @@ public class ModBlocks {
     public static final Block CHECKMATE = registerBlock( "checkmate",
             new Block(FabricBlockSettings.of(Material.STONE).strength(6f).requiresTool()), ItemGroup.BUILDING_BLOCKS);
 
+    public static final Block TIN_BLOCK = registerBlock( "tin_block",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ItemGroup.BUILDING_BLOCKS);
+
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);
         return Registry.register(Registry.BLOCK, ConversionMod.ifOf(name), block);
@@ -28,8 +31,5 @@ public class ModBlocks {
     public static void registerModBlocks() {
             ConversionMod.LOGGER.info("Registering ModBlocks for" + ConversionMod.MODID);
     }
-
-    public static final Block TIN_BLOCK = registerBlock( "tin_block",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ItemGroup.BUILDING_BLOCKS);
 
 }

@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "conversion:block/tin_block" }
+  }
+}
