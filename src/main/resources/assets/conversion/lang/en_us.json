@@ -1,5 +1,6 @@
 {
   "item.conversion.thing": "Thing",
   "block.conversion.checkmate": "Checkmate",
-  "block.conversion.tin_block": "Tin Block"
+  "block.conversion.tin_block": "Tin Block",
+  "block.conversion.maple_log": "Maple Log"
 }
