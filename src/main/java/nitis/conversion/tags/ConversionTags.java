@@ -1,6 +1,5 @@
 package nitis.conversion.tags;
 
-import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.tag.TagKey;
 import net.minecraft.util.registry.Registry;
@@ -15,6 +14,6 @@ public abstract class ConversionTags {
     }
 
     private static TagKey<Item> register(String id) {
-        return TagKey.of(Registry.ITEM_KEY, ConversionMod.ifOf(id));
+        return TagKey.of(Registry.ITEM_KEY, ConversionMod.idOf(id));
     }
 }

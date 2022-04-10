@@ -8,18 +8,27 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class ConversionMod implements ModInitializer {
-	public final static String MODID = "conversion";
-	public final static Logger LOGGER = LoggerFactory.getLogger(MODID);
+	private final static ModInitializer[] SERVER_CONTENT;
+	public final static String MODID;
+	public final static Logger LOGGER;
 
-    public static Identifier ifOf(String id) {
+    public static Identifier idOf(String id) {
 		return new Identifier(MODID, id);
     }
 
     @Override
 	public void onInitialize() {
+		for (ModInitializer contentList : SERVER_CONTENT) {
+			contentList.onInitialize(); //Initialize content list
+		}
+	}
+	static {
+		SERVER_CONTENT = new ModInitializer[] {
+				new ModItems(),
+				new ModBlocks()
+		};
 
-		ModItems.registerModItems();
-		ModBlocks.registerModBlocks();
-
+		MODID = "conversion";
+		LOGGER = LoggerFactory.getLogger(MODID);
 	}
 }
