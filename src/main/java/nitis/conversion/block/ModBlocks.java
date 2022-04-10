@@ -29,4 +29,11 @@ public class ModBlocks {
             ConversionMod.LOGGER.info("Registering ModBlocks for" + ConversionMod.MODID);
     }
 
+    public static final Block TIN_BLOCK = registerBlock( "tin_block",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ItemGroup.BUILDING_BLOCKS);
+
+    private static Item registerBlockItem(String name, Block block, ItemGroup group) {
+        return Registry.register(Registry.ITEM, ConversionMod.ifOf(name),
+                new BlockItem(block, new FabricItemSettings().group(group)));
+    }
 }
