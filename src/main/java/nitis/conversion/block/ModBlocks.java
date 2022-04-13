@@ -12,6 +12,7 @@ import net.minecraft.item.Item.Settings;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.util.registry.Registry;
 import nitis.conversion.ConversionMod;
+import nitis.conversion.item.ModItemGroup;
 import org.jetbrains.annotations.Nullable;
 
 public class ModBlocks implements ModInitializer {
@@ -63,7 +64,7 @@ public class ModBlocks implements ModInitializer {
         CHECKMATE = new Block(FabricBlockSettings.of(Material.STONE).strength(3f).requiresTool());
         CHECKMATE_ITEM = new BlockItem(CHECKMATE, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS));
         TIN_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool());
-        TIN_BLOCK_ITEM = new BlockItem(TIN_BLOCK, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS));
+        TIN_BLOCK_ITEM = new BlockItem(TIN_BLOCK, new FabricItemSettings().group(ModItemGroup.TIN));
     }
     private enum RegistryType {
         Both(true, true), // Add Block and BlockItem
