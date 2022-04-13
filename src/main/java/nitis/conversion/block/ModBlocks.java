@@ -16,16 +16,16 @@ import nitis.conversion.item.ModItemGroup;
 import org.jetbrains.annotations.Nullable;
 
 public class ModBlocks implements ModInitializer {
-    public final static Block CHECKMATE, TIN_BLOCK;
-    public final static BlockItem CHECKMATE_ITEM, TIN_BLOCK_ITEM;
+    public final static Block CHECKMATE_BLOCK, TIN_BLOCK;
+    public final static BlockItem CHECKMATE_BLOCK_ITEM, TIN_BLOCK_ITEM;
 
     @Override
     public void onInitialize() {
         registry(
                 RegistryType.Both,
-                "checkmate",
-                CHECKMATE,
-                CHECKMATE_ITEM
+                "checkmate_block",
+                CHECKMATE_BLOCK,
+                CHECKMATE_BLOCK_ITEM
         );
         registry(
                 RegistryType.Both,
@@ -61,9 +61,9 @@ public class ModBlocks implements ModInitializer {
         Registry.register(Registry.ITEM, ConversionMod.idOf(id), item);
     }
     static {
-        CHECKMATE = new Block(FabricBlockSettings.of(Material.STONE).strength(3f).requiresTool());
-        CHECKMATE_ITEM = new BlockItem(CHECKMATE, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS));
-        TIN_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool());
+        CHECKMATE_BLOCK = new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool());
+        CHECKMATE_BLOCK_ITEM = new BlockItem(CHECKMATE_BLOCK, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS));
+        TIN_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool());
         TIN_BLOCK_ITEM = new BlockItem(TIN_BLOCK, new FabricItemSettings().group(ModItemGroup.TIN));
     }
     private enum RegistryType {

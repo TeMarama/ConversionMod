@@ -1,7 +1,9 @@
 {
   "item.conversion.thing": "Thing",
-  "block.conversion.checkmate": "Checkmate",
+
+  "block.conversion.checkmate_block": "Checkmate Block",
   "block.conversion.tin_block": "Tin Block",
   "block.conversion.tin_ingot": "Tin Ingot",
+
   "itemGroup.conversion.tin": "Tin"
 }

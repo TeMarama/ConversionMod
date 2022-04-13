@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "conversion:block/checkmate"
+    "all": "conversion:block/checkmate_block"
   }
 }
