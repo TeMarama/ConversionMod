@@ -22,6 +22,10 @@ public class ConversionMod implements ModInitializer {
 			contentList.onInitialize(); //Initialize content list
 		}
 	}
+
+	public static void log(Object obj) {
+		LOGGER.info(obj.toString());
+	}
 	static {
 		SERVER_CONTENT = new ModInitializer[] {
 				new ModItems(),
