@@ -2,10 +2,8 @@ package nitis.conversion.mixins;
 
 import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
-import net.minecraft.text.Text;
 import net.minecraft.util.registry.RegistryEntry;
 import nitis.Nullable;
-import nitis.conversion.ConversionMod;
 import nitis.conversion.tags.ConversionTags;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
