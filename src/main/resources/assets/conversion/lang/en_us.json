@@ -1,10 +1,10 @@
 {
   "item.conversion.thing": "Thing",
+  "item.conversion.tin_ingot": "Tin Ingot",
+  "item.conversion.tin_nugget": "Tin Nugget",
 
   "block.conversion.checkmate_block": "Checkmate Block",
   "block.conversion.tin_block": "Tin Block",
-  "block.conversion.tin_ingot": "Tin Ingot",
-  "block.conversion.tin_nugget": "Tin Nugget",
 
   "itemGroup.conversion.tin": "Tin"
 }
