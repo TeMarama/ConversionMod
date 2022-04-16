@@ -55,7 +55,7 @@ public abstract class ItemMixin {
     }
     @Inject(method = "isFood", at = @At("RETURN"), cancellable = true)
     public void isFood(CallbackInfoReturnable<Boolean> cir) {
-        if (isFood.getValue())) {
+        if (isFood.getValue()) {
             cir.setReturnValue(true);
         }
     }
