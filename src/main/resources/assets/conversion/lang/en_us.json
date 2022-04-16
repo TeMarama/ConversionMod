@@ -1,10 +1,6 @@
 {
   "item.conversion.thing": "Thing",
-  "item.conversion.tin_ingot": "Tin Ingot",
-  "item.conversion.tin_nugget": "Tin Nugget",
-
-  "block.conversion.checkmate_block": "Checkmate Block",
+  "block.conversion.checkmate": "Checkmate",
   "block.conversion.tin_block": "Tin Block",
-
-  "itemGroup.minecraft.tin": "Tin"
+  "block.conversion.maple_log": "Maple Log"
 }
