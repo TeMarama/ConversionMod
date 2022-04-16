@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "conversion:block/checkmate_block" }
+  }
+}

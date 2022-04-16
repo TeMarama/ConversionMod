@@ -4,9 +4,7 @@
   "package": "nitis.conversion.mixins",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "ReferenceAccessor",
-    "ConversionMixin",
-    "ItemMixin"
+    "ConversionMixin"
   ],
   "injectors": {
     "defaultRequire": 1
