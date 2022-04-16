@@ -50,6 +50,7 @@ public abstract class ItemMixin {
         initializeFood();
         if (isFood.getValue()) {
             cir.setReturnValue(lightweightFoodComponent);
+
         }
     }
     @Inject(method = "isFood", at = @At("RETURN"), cancellable = true)
