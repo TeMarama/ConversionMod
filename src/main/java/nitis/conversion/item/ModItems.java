@@ -11,6 +11,7 @@ import nitis.conversion.ConversionMod;
 public class ModItems implements ModInitializer {
     public final static Item THING;
     public final static Item TIN_INGOT;
+    public final static Item TIN_NUGGET;
 
     static {
         THING = new Item(new FabricItemSettings().group(ItemGroup.MISC));
@@ -19,9 +20,14 @@ public class ModItems implements ModInitializer {
         TIN_INGOT = new Item(new FabricItemSettings().group(ModItemGroup.TIN));
     }
 
+    static {
+        TIN_NUGGET = new Item(new FabricItemSettings().group(ModItemGroup.TIN));
+    }
+
+
     @Override
     public void onInitialize() {
-        registryItem("thing", THING); registryItem("tin_ingot", TIN_INGOT);
+        registryItem("thing", THING); registryItem("tin_ingot", TIN_INGOT); registryItem("tin_nugget", TIN_NUGGET);
     }
     private static void registryItem(String id, Item item) {
         Registry.register(Registry.ITEM, ConversionMod.idOf(id), item);
