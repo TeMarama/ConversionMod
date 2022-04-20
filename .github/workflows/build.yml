@@ -7,6 +7,8 @@ name: build
 on: 
   push:
     branches: [ master ]
+    paths:
+    - 'src/'
     
   workflow_dispatch:
 
@@ -40,5 +42,5 @@ jobs:
         if: ${{ runner.os == 'Linux' && matrix.java == '17' }} # Only upload artifacts built from latest java on one OS
         uses: actions/upload-artifact@v2
         with:
-          name: Artifacts
+          name: Build ${{ github.head_ref }}
           path: build/libs/
