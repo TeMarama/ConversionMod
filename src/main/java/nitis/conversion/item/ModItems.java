@@ -12,6 +12,7 @@ public class ModItems implements ModInitializer {
     public final static Item THING;
     public final static Item TIN_INGOT;
     public final static Item TIN_NUGGET;
+    public final static Item ROCK;
 
     static {
         THING = new Item(new FabricItemSettings().group(ItemGroup.MISC));
@@ -24,10 +25,14 @@ public class ModItems implements ModInitializer {
         TIN_NUGGET = new Item(new FabricItemSettings().group(ModItemGroup.TIN));
     }
 
+    static {
+        ROCK = new Item(new FabricItemSettings().group(ItemGroup.MISC));
+    }
+
 
     @Override
     public void onInitialize() {
-        registryItem("thing", THING); registryItem("tin_ingot", TIN_INGOT); registryItem("tin_nugget", TIN_NUGGET);
+        registryItem("thing", THING); registryItem("tin_ingot", TIN_INGOT); registryItem("tin_nugget", TIN_NUGGET); registryItem("rock", ROCK);
     }
     private static void registryItem(String id, Item item) {
         Registry.register(Registry.ITEM, ConversionMod.idOf(id), item);
