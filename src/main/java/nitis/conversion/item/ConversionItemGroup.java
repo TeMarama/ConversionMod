@@ -6,7 +6,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import nitis.conversion.ConversionMod;
 
-public class ModItemGroup {
+public class ConversionItemGroup {
     public static final ItemGroup TIN = FabricItemGroupBuilder.build(new Identifier(ConversionMod.MODID, "tin"),
-            () -> new ItemStack(ModItems.TIN_INGOT));
+            () -> new ItemStack(ConversionItems.TIN_INGOT));
 }

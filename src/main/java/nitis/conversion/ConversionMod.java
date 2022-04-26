@@ -1,9 +1,10 @@
 package nitis.conversion;
 
 import net.fabricmc.api.ModInitializer;
-import nitis.conversion.block.ModBlocks;
+import nitis.conversion.block.ConversionBlocks;
 import net.minecraft.util.Identifier;
-import nitis.conversion.item.ModItems;
+import nitis.conversion.item.ConversionItems;
+import nitis.conversion.world.biome.ConversionBiomes;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -30,11 +31,12 @@ public class ConversionMod implements ModInitializer {
 	}
 	static {
 		SERVER_CONTENT = new ModInitializer[] {
-				new ModItems(),
-				new ModBlocks()
+				new ConversionItems(),
+				new ConversionBlocks(),
+				new ConversionBiomes(),
 		};
 
 		MODID = "conversion";
-		LOGGER = LoggerFactory.getLogger(MODID);
+		LOGGER = LoggerFactory.getLogger("Conversion");
 	}
 }

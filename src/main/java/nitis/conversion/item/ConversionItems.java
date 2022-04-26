@@ -4,11 +4,10 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
-import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import nitis.conversion.ConversionMod;
 
-public class ModItems implements ModInitializer {
+public class ConversionItems implements ModInitializer {
     public final static Item THING;
     public final static Item TIN_INGOT;
     public final static Item TIN_NUGGET;
@@ -18,11 +17,11 @@ public class ModItems implements ModInitializer {
         THING = new Item(new FabricItemSettings().group(ItemGroup.MISC));
     }
     static {
-        TIN_INGOT = new Item(new FabricItemSettings().group(ModItemGroup.TIN));
+        TIN_INGOT = new Item(new FabricItemSettings().group(ConversionItemGroup.TIN));
     }
 
     static {
-        TIN_NUGGET = new Item(new FabricItemSettings().group(ModItemGroup.TIN));
+        TIN_NUGGET = new Item(new FabricItemSettings().group(ConversionItemGroup.TIN));
     }
 
     static {

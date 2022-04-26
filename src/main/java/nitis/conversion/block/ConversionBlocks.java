@@ -12,11 +12,11 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.registry.Registry;
 import nitis.conversion.ConversionMod;
-import nitis.conversion.item.ModItemGroup;
+import nitis.conversion.item.ConversionItemGroup;
 
 import javax.annotation.Nullable;
 
-public class ModBlocks implements ModInitializer {
+public class ConversionBlocks implements ModInitializer {
     public final static Block CHECKMATE_BLOCK, TIN_BLOCK, MAPLE_LOG;
     public final static BlockItem CHECKMATE_BLOCK_ITEM, TIN_BLOCK_ITEM, MAPLE_LOG_ITEM;
 
@@ -71,7 +71,7 @@ public class ModBlocks implements ModInitializer {
         CHECKMATE_BLOCK = new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool());
         CHECKMATE_BLOCK_ITEM = new BlockItem(CHECKMATE_BLOCK, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS));
         TIN_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool());
-        TIN_BLOCK_ITEM = new BlockItem(TIN_BLOCK, new FabricItemSettings().group(ModItemGroup.TIN));
+        TIN_BLOCK_ITEM = new BlockItem(TIN_BLOCK, new FabricItemSettings().group(ConversionItemGroup.TIN));
         MAPLE_LOG = createLogBlock(MapColor.ORANGE, MapColor.TERRACOTTA_ORANGE);
         MAPLE_LOG_ITEM = new BlockItem(MAPLE_LOG, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS));
     }

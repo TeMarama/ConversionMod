@@ -5,7 +5,8 @@
   "compatibilityLevel": "JAVA_17",
   "mixins": [
     "ReferenceAccessor",
-    "ItemMixin"
+    "ItemMixin",
+    "BiomeSourceMixin"
   ],
   "injectors": {
     "defaultRequire": 1
