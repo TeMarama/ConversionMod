@@ -34,7 +34,17 @@
                   "condition": "minecraft:survives_explosion"
                 }
               ],
-              "name": "conversion:rock"
+              "name": "conversion:rock",
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 2,
+                    "max": 4
+                  },
+                  "add": false
+                }
+                ]
             }
           ]
         }
