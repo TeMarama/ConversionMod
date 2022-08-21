@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:tin_block"
+          "name": "conversion:tin_block"
         }
       ],
       "conditions": [
