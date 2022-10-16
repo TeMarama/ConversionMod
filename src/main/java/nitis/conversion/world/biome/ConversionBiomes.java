@@ -38,7 +38,6 @@ public class ConversionBiomes implements ModInitializer {
         DefaultBiomeFeatures.addExtraDefaultFlowers(generationSettings);
 
         return new Biome.Builder()
-                .category(Biome.Category.NONE)
                 .temperature(0.3f).temperatureModifier(Biome.TemperatureModifier.NONE)
                 .downfall(0.2f).precipitation(Biome.Precipitation.RAIN)
                 .effects(createEffects())

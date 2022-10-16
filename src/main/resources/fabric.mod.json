@@ -12,9 +12,10 @@
   "contributors": [
   ],
   "contact": {
-    "homepage": "https://curseforge.com/mc-mods/conversion",
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/conversion",
     "sources": "https://github.com/NiTiS-Dev/Conversion",
-    "repo": "https://github.com/NiTiS-Dev/Conversion"
+    "repo": "https://github.com/NiTiS-Dev/Conversion",
+    "issues": "https://github.com/NiTiS-Dev/Conversion/issues"
   },
 
   "license": "MIT",
@@ -26,7 +27,7 @@
       "nitis.conversion.ConversionMod"
     ],
     "client": [
-      "nitis.conversion.client.ConversionClient"
+      "nitis.conversion.ConversionMod"
     ]
   },
   "mixins": [
@@ -34,9 +35,9 @@
   ],
 
   "depends": {
-    "fabricloader": ">=0.13.3",
-    "fabric": "*",
-    "minecraft": "1.18.x",
+    "fabricloader": ">=0.14.9",
+    "fabric": ">=0.60.0",
+    "minecraft": "1.19.*",
     "java": ">=17"
   },
   "custom": {
